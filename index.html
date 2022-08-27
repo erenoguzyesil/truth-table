@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/favicon-64x64.png" sizes="64x64">
+    <title>Truth Table Generator</title>
+    <meta name="description" content="This tool generates a truth table based on a logical connective.">
+    <meta name="keywords" content="logic, truth table, logical connectives, truth table generator">
+</head>
+
+<body>
+    <main class="center">
+        <div>
+            <div class="space"></div>
+            <h1>Truth Table Generator</h1>
+            <p>You can use this tool to generate various truth tables based on a logical connective.</p>
+
+            <div class="generator">
+                <select id="statement-1">
+                    <option value="not-negated" selected>p</option>
+                    <option value="negated">not p</option>
+                </select>
+
+                <select id="logical-connective">
+                    <option value="and">and</option>
+                    <option value="or">or</option>
+                    <option value="implies">implies</option>
+                    <option value="xor">exclusive or (xor)</option>
+                    <option value="iff">if and only if</option>
+                </select>
+
+                <select id="statement-2">
+                    <option value="not-negated" selected>q</option>
+                    <option value="negated">not q</option>
+                </select>
+            </div>
+
+            <p>Truth table:</p>
+
+            <table id="truth-table"></table>
+            <div class="space"></div>
+        </div>
+    </main>
+</body>
+
+</html>
+<script src="script.js"></script>

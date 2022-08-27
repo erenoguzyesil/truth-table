@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #f9faff;
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    padding: 25px;
+}
+
+.generator {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px solid #606060;
+}
+
+.generator select {
+    min-width: 100px;
+    padding: 10px 20px;
+    border: 2px solid #606060;
+    border-radius: 0;
+    background-color: #dde3f1;
+    font: inherit;
+    font-size: 20px;
+    text-align: center;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: url(assets/expand-more.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 5px) 50%;
+    background-size: 16px;
+}
+
+.generator select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(140, 144, 154, 0.5);
+}
+
+.generator select#logical-connective {
+    font-weight: 700;
+}
+
+#truth-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#truth-table th {
+    padding: 10px;
+    border: 2px solid #606060;
+    background-color: #dde3f1;
+    text-align: center;
+    font-weight: 400;
+}
+
+#truth-table th:last-of-type {
+    font-weight: 700;
+}
+
+#truth-table td {
+    padding: 10px 20px;
+    border: 2px solid #606060;
+}
+
+#truth-table tr :last-child {
+    text-align: center;
+    font-weight: 700;
+}
+
+.space {
+    display: none;
+    height: 72px;
+}
+
+@media only screen and (max-width: 545px) {
+    .generator select {
+        width: 100%;
+    }
+
+    .space {
+        display: block;
+    }
+}
