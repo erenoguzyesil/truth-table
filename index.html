@@ -15,7 +15,7 @@
 
 <body>
     <main class="center">
-        <div>
+        <div class="content">
             <div class="space"></div>
             <h1>Truth Table Generator</h1>
             <p>You can use this tool to generate various truth tables based on a logical connective.</p>
@@ -43,7 +43,34 @@
             <p>Truth table:</p>
 
             <table id="truth-table"></table>
-            <div class="space"></div>
+
+            <div class="radio-buttons">
+                <p>Display the truth value as:</p>
+
+                <div>
+                    <input type="radio" name="truth-value-display" id="option-word" checked>
+                    <label for="words">
+                        <div class="button checked"></div>
+                        True or False
+                    </label>
+                </div>
+
+                <div>
+                    <input type="radio" name="truth-value-display" id="option-number">
+                    <label for="number">
+                        <div class="button"></div>
+                        1 or 0 (1 for True, 0 for False)
+                    </label>
+                </div>
+
+                <div>
+                    <input type="radio" name="truth-value-display" id="option-abbreviation">
+                    <label for="abbreviation">
+                        <div class="button"></div>
+                        T or F (T for True, F for False)
+                    </label>
+                </div>
+            </div>
         </div>
     </main>
 </body>
