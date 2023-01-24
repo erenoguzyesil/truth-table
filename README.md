@@ -1,6 +1,6 @@
 # Truth Table Generator
 
-Truth Table Generator is a simple website about Logic. It generates a truth table for two statements based on a logical connective. One can also negate one or both of the statements.
+Truth Table Generator is a simple website about Logic. It generates a truth table for two statements based on a logical connective. One can also negate one or both of the statements and display the truth values as (True, False) or (1, 0) or (T, F).
 
 You can read these to understand the project better:
 
